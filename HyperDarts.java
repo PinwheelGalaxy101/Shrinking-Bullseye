@@ -1,4 +1,4 @@
-public class Dart 
+public class HyperDarts
 {
 	public static void main(String[] args) 
 	{
@@ -36,7 +36,7 @@ public class Dart
 
 		double variance = dev_tot / SIZE;
 
-		System.out.println("3Blue1Brown's dart problem");
+		System.out.println("Greg Egan's HyperDarts problem");
 		System.out.println("Iteration no.: " + SIZE);
 		System.out.println("Computation time: " + (time2 - time1)/1000000000.0);
 		System.out.println("Mean score: " + average);
