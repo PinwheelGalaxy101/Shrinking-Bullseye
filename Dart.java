@@ -34,12 +34,13 @@ public class Dart
 			dev_tot += (score[i] - average)*(score[i] - average);
 		}
 
-		double stdev = Math.sqrt(dev_tot / SIZE);
+		double variance = dev_tot / SIZE;
 
 		System.out.println("3Blue1Brown's dart problem");
 		System.out.println("Iteration no.: " + SIZE);
 		System.out.println("Computation time: " + (time2 - time1)/1000000000.0);
 		System.out.println("Mean score: " + average);
-		System.out.println("Standard deviation of scores: " + stdev);
+		System.out.println("Variance: " + variance);
+		System.out.println("Standard deviation of scores: " + Math.sqrt(variance));
 	}
 }
